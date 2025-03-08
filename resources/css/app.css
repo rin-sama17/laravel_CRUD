@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@source "../views";
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@source "../**/*.vue";
+
+
+@layer components{
+    .btn {
+      @apply  m-4 p-1 flex content-center justify-center rounded-sm shadow-gray-400 ring-1 drop-shadow-xs shadow-md  bg-green-300 hover:bg-green-500  active:bg-green-700;
+    }
+    .input{
+        @apply w-52 h-10 transition-all duration-300 rounded-sm ring-2 ring-gray-300 hover:ring-indigo-500
+    }
+
+}
